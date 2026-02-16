@@ -230,10 +230,76 @@ img {
 
 
 /*=============== HOME SECTION ===============*/
+.home__container {
+	padding-top: 1.5rem;
+	row-gap: 3rem;
+}
 
+.home__data {
+	position: relative;
+	text-align: center;
+}
+
+.home__title {
+	font-size: var(--biggest-font-size);
+}
+
+.home__title span {
+	color: var(--first-color);
+}
+
+.home__description {
+	margin-block: 1rem 2rem;
+}
+
+.home__data img, 
+.home__text {
+	position: absolute;
+}
+
+.home__flower-1 {
+	width: 20px;
+	top: -1.5rem;
+	left: 4rem;
+}
+
+.home__flower-2 {
+	width: 20px;
+	left: 1.25rem;
+	bottom: 3rem;
+}
+
+.home__leaf-1 {
+	width: 30px;
+	top: 0;
+	right: 0;
+}
+
+.home__leaf-2 {
+	width: 30px;
+	left: 4rem;
+	bottom: -2rem;
+}
+
+.home__text {
+	left: 0;
+	top: -1.75rem;
+	font-size: 12rem;
+	font-weight: var(--font-medium);
+	color: var(--body-color-alt);
+	z-index: -1;
+}
 
 /*=============== BUTTON ===============*/
-
+.button {
+	display: inline-flex;
+	background-color: var(--first-color);
+	color: var(--white-color);
+	font-weight: var(--font-semi-bold);
+	padding: 1rem 2rem;
+	border-radius: .5rem;
+	transition: background-color .4s, box-shadow .4s;
+}
 
 /*=============== ABOUT SECTION ===============*/
 
