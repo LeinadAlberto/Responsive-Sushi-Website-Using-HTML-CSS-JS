@@ -40,7 +40,16 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER MENU ===============*/ 
+const swiperTabs = new Swiper('.menu__tabs', {
+   slidesPerView: 'auto'
+})
 
+const swiperMenu = new Swiper('.menu__content', {
+   loop: true,
+   thumbs: {
+      swiper: swiperTabs,
+   }
+})
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
